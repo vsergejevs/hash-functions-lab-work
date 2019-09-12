@@ -1,0 +1,2 @@
+# hash-functions-lab-work
+This project is the first lab work inside course Algorithms and Data Structures. Upon launching, program should display a random size unsorted array with random integers. 1. Then a linear search function with a barrier is going to search for a random number inside unsorted array. 2. Array will get sorted into new array using hashing method following by search for a random number. Code will get implemented using C++ 
