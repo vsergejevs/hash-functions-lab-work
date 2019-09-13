@@ -14,7 +14,7 @@ int firstArray [1000];
 
 int main ()
 {
-  int randArrayInt, randArrayLength;
+  int randArrayInt, randArrayLength, randSearchItem;
   
   
   // TODO: generate random integer number from 100 - 1000 - DONE
@@ -27,7 +27,7 @@ int main ()
   //secondRand = rand() % 10 + 1;  
   
   
-  cout << "Array will hold " << randArrayLength << " integers." << endl;
+  cout << "Array will hold " << randArrayLength << " integers. \n" << endl;
   
   
   // TODO: create a for loop to generate random numbers and push them to array - DONE
@@ -39,8 +39,11 @@ int main ()
       firstArray[i] = randArrayInt;
       cout << firstArray[i] << ", ";
   }
-  cout << "]";
+  cout << "]\n" << endl; 
   
+  randSearchItem = rand() % 900 + 100;
+  
+  cout << "This is the random key to search for in array: " << randSearchItem << endl;
   
   return 0;
 } 
