@@ -14,29 +14,29 @@ int firstArray [1000];
 
 int main ()
 {
-  int firstRand, secondRand;
+  int randArrayInt, randArrayLength;
   
   
   // TODO: generate random integer number from 100 - 1000 - DONE
   /* initialize random seed: */
   srand (time(nullptr));
-  secondRand = rand() % 900 + 100;
+  randArrayLength = rand() % 900 + 100;
   
   
   // random number in the range 1-10 for tests
   //secondRand = rand() % 10 + 1;  
   
   
-  cout << "Array will hold " << secondRand << " integers." << endl;
+  cout << "Array will hold " << randArrayLength << " integers." << endl;
   
   
   // TODO: create a for loop to generate random numbers and push them to array - DONE
   int i;
   cout << "[ ";
-  for (i = 0; i < secondRand; i++) 
+  for (i = 0; i < randArrayLength; i++) 
   {
-      firstRand = rand() % 900 + 100;
-      firstArray[i] = firstRand;
+      randArrayInt = rand() % 900 + 100;
+      firstArray[i] = randArrayInt;
       cout << firstArray[i] << ", ";
   }
   cout << "]";
