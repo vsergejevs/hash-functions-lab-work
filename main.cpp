@@ -8,25 +8,29 @@
 #include <stdlib.h>     /* srand, rand */
 #include <time.h>       /* time */
 using namespace std;
-
+  
 // TODO: declare empty array which will hold the random numbers - DONE
 int firstArray [1000];
 
 int main ()
 {
   int firstRand, secondRand;
-
-
+  
+  
   // TODO: generate random integer number from 100 - 1000 - DONE
   /* initialize random seed: */
   srand (time(nullptr));
-      // v1 in the range 100-1000
-  //secondRand = rand() % 900 + 100;   // v2 in the range 100-1000
-  secondRand = rand() % 10 + 1;
+  secondRand = rand() % 900 + 100;
+  
+  
+  // random number in the range 1-10 for tests
+  //secondRand = rand() % 10 + 1;  
+  
+  
   cout << "Array will hold " << secondRand << " integers." << endl;
   
   
-  // TODO: create a for loop to generate random numbers and push them to array
+  // TODO: create a for loop to generate random numbers and push them to array - DONE
   int i;
   cout << "[ ";
   for (i = 0; i < secondRand; i++) 
@@ -36,11 +40,7 @@ int main ()
       cout << firstArray[i] << ", ";
   }
   cout << "]";
-    
   
-
-  //cout << "this is a random number ranging from (100 - 1000) - " << secondRand << endl;
-  //cout << "this is the array holding random numbers: " << "[" << firstArray[6] << "]" << endl;
   
   return 0;
 } 
