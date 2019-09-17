@@ -11,10 +11,11 @@ using namespace std;
 
 // TODO: declare empty array which will hold the random numbers - DONE
 int firstArray [1000];
+int hashFunctionArray [1000];
 
 int main ()
 {
-    int randArrayInt, randArrayLength, randSearchItem, c, pos, j;
+    int randArrayInt, randArrayLength, randSearchItem, pos, j;
 
 
     // TODO: generate random integer number from 100 - 1000 - DONE
@@ -63,5 +64,16 @@ int main ()
         cout << randSearchItem << " found at position "<< pos;
 
 
+    // TODO: split program into logical functions
+    // TODO: create empty array so hash function can insert content from current array into it - DONE
+    // TODO: create associative array using hashing method
+    // TODO: search for the given keey in new array 
+    // h(x) = x mod n
+    // x - element we insert into array
+    // n - how many items are there in the array
+    //
+
     return 0;
+
+
 }
