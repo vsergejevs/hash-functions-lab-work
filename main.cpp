@@ -70,6 +70,21 @@ int main ()
         cout << firstArray[i] << " ";
         cout << hashFunctionArray[i] << " ";
     }
+    
+    //looping through first array to display it
+    cout << "this is the first Array" << endl;
+    for (int i = 0; i <= randArrayLength - 1; i++)
+    {
+        cout << firstArray[i] << " ";
+        
+    }
+    
+    //looping through hash table array to display it
+    cout << "this is the first Array" << endl;
+    for (int i = 0; i <= randArrayLength - 1; i++)
+    {
+        cout << hashFunctionArray[i] << " ";
+    }
 
 
     // TODO: split program into logical functions
