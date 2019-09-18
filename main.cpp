@@ -59,9 +59,17 @@ int main ()
     pos = j + 1;
 
     if (j == randArrayLength)
-        cout << "Number not found";
+        cout << "Number not found" << endl;
     else
-        cout << randSearchItem << " found at position "<< pos;
+        cout << randSearchItem << " found at position "<< pos << endl;
+    
+    //creating second array to fill up with hashtable keys
+    for (int i = 0; i <= randArrayLength - 1; i++)
+    {
+        hashFunctionArray[i] = firstArray[i] % randArrayLength;
+        cout << firstArray[i] << " ";
+        cout << hashFunctionArray[i] << " ";
+    }
 
 
     // TODO: split program into logical functions
